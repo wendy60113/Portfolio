@@ -6,25 +6,55 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #3c79dd;
+  --ifm-color-primary-dark: #2669d7;
+  --ifm-color-primary-darker: #2363cb;
+  --ifm-color-primary-darkest: #1d52a7;
+  --ifm-color-primary-light: #5489e1;
+  --ifm-color-primary-lighter: #6092e3;
+  --ifm-color-primary-lightest: #84aaea;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #3c79dd;
+  --ifm-color-primary-dark: #2669d7;
+  --ifm-color-primary-darker: #2363cb;
+  --ifm-color-primary-darkest: #1d52a7;
+  --ifm-color-primary-light: #5489e1;
+  --ifm-color-primary-lighter: #6092e3;
+  --ifm-color-primary-lightest: #84aaea;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__item.navbar__link.header-github-link:hover{
+  background: url("../../static/img/navbar/github_light.svg") 0 center / 20px 20px no-repeat var(--ifm-color-emphasis-200);
+  background-position: center;
+}
+
+html[data-theme="light"] .navbar__item.navbar__link.header-github-link:hover{
+  background: url("../../static/img/navbar/github_dark.svg") 0 center / 20px 20px no-repeat var(--ifm-color-emphasis-200);
+  background-position: center;
+}
+
+.navbar__item.navbar__link.header-github-link{
+  display: flex;
+  align-items: center;
+  background: url("../../static/img/navbar/github_light.svg") 0 center / 20px 20px no-repeat;
+  padding: 0.2rem 0 0.2rem 1.8rem;
+  font-size: 15px;
+
+  height: 32px;
+  width: 32px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-position: center;
+
+}
+
+html[data-theme="light"] .navbar__item.navbar__link.header-github-link{
+  background: url("../../static/img/navbar/github_dark.svg") 0 center / 20px 20px no-repeat;
+  background-position: center;
 }

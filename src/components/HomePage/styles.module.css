@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.svgPic{
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.underBg{
+  background-color: #B6D3F2;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.Girl{
+  position: absolute;
+  top: 8%;
+  left: 25%;
+  z-index: 3;
+
+}
+.CircleLine{
+  position: absolute;
+  top: 15%;
+  left: 75%;
+}
+.titleField{
+  position: relative;
+  width: 70%;
+}
+.TitleName{
+  font-family: 'Alata', sans-serif;
+  font-size: 5rem;
+  position: absolute;
+  top: 6%;
+  left: -16%;
+  color: #333;
+  text-shadow: 5px 5px 0px #fff,-5px -5px 0px #fff;
+  z-index: 2;
+}
+.RectLine{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 1;
+}
+@media(max-width: 1200px){
+  .Girl{
+    transform: scale(0.9);
+    transform-origin: center left;
+  }
+  .RectLine{
+    transform-origin: center right;
+    transform: scale(0.8);
+  }
+}
+
+@media(max-width: 992px){
+  .container{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .svgPic{
+    width: 100%;
+    height: 30%;
+  }
+  .titleField{
+    width: 100%;
+    height: 20%;
+  }
+  .RectLine{
+    transform-origin: right top;
+  }
+  .TitleName{
+    font-size: 6rem;
+    left: -20%;
+  }
+  .underBg{
+    width: 40%;
+    height: 100%;
+  }
+  .CircleLine{
+    display: none;
+  }
+  .Girl{
+    transform-origin: left top;
+    top: -8%;
+    left: 10%;
+  }
+}
+@media(max-width: 576px){
+  .RectLine{
+    transform: scale(0.4);
+  }
+  .Girl{
+    transform: scale(0.5);
+  }
+}
