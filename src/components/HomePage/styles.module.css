@@ -1,102 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-.container{
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+.container {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
-.svgPic{
+.svgPic {
+  position: relative;
   width: 30%;
   height: 100%;
-  position: relative;
 }
-.underBg{
-  background-color: #B6D3F2;
+.underBg {
+  background-color: #b6d3f2;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
-.Girl{
-  position: absolute;
-  top: 8%;
-  left: 25%;
-  z-index: 3;
-
-}
-.CircleLine{
+.CircleLine {
   position: absolute;
   top: 15%;
-  left: 75%;
+  right: -15%;
 }
-.titleField{
+.Girl {
+  position: absolute;
+  top: 10%;
+  left: 27%;
+  z-index: 2;
+}
+.titleField {
   position: relative;
   width: 70%;
 }
-.TitleName{
-  font-family: 'Alata', sans-serif;
-  font-size: 5rem;
+.TitleName {
   position: absolute;
-  top: 6%;
-  left: -16%;
+  font-family: "Alata", sans-serif;
+  font-size: 5rem;
+  top: 20%;
+  left: 10%;
   color: #333;
-  text-shadow: 5px 5px 0px #fff,-5px -5px 0px #fff;
   z-index: 2;
 }
-.RectLine{
+.RectLine {
   position: absolute;
   top: 20%;
   right: 0;
+  width: 80%;
+  height: 30%;
   z-index: 1;
 }
-@media(max-width: 1200px){
-  .Girl{
-    transform: scale(0.9);
-    transform-origin: center left;
-  }
-  .RectLine{
-    transform-origin: center right;
-    transform: scale(0.8);
-  }
-}
 
-@media(max-width: 992px){
-  .container{
+@media (max-width: 992px) {
+  .container {
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
-  .svgPic{
+  .svgPic {
+    width: 100%;
+    height: 50%;
+  }
+  .titleField {
     width: 100%;
     height: 30%;
   }
-  .titleField{
-    width: 100%;
-    height: 20%;
-  }
-  .RectLine{
-    transform-origin: right top;
-  }
-  .TitleName{
-    font-size: 6rem;
-    left: -20%;
-  }
-  .underBg{
+  .underBg {
     width: 40%;
     height: 100%;
   }
-  .CircleLine{
+  .CircleLine {
     display: none;
   }
-  .Girl{
-    transform-origin: left top;
-    top: -8%;
-    left: 10%;
+  .RectLine {
+    height: 60%;
+  }
+  .TitleName {
+    font-size: 4rem;
+  }
+  .Girl {
+    left: 5%;
+    top: -30%;
+    width: 30em;
   }
 }
-@media(max-width: 576px){
-  .RectLine{
-    transform: scale(0.4);
+@media (max-width: 576px) {
+  .TitleName {
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
-  .Girl{
-    transform: scale(0.5);
+  .Girl {
+    width: 22em;
   }
 }
