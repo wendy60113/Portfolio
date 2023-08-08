@@ -5,12 +5,21 @@
     margin: 10% 0;
 }
 .col{
-    width: 35%;
+    width: 30%;
     margin: 2%;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     text-align: center;
     cursor: pointer;
     font-family: Verdana;
+}
+.col:hover .icon{
+    fill: var(--ifm-color-primary-light);
+}
+.col:hover label{
+    color: var(--ifm-color-primary-dark);
+}
+.col:hover span{
+    color: var(--ifm-color-primary-light);
 }
 .col label{
     color: #333;
