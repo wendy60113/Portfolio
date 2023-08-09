@@ -1,0 +1,50 @@
+.container{
+    text-align: center;
+    background-color: #F0F1F5;
+    padding: 5% 0 2% 0;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+.skillSection{
+    margin: 2rem 0 5rem 0;
+}
+.skillSection .title{
+    font-size: 1.5rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* background-color: #fff; */
+    margin: 0% 20%;
+}
+.col{
+    margin: 3% 4%;
+}
+.icon{
+    font-size: 4rem;
+    color: #808080;
+    line-height: 3rem;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .row{
+        margin: 0% 5%;
+    }
+    .col{
+        margin: 5% 4%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .container{
+        padding: 8% 0 2% 0;
+    }
+    .skillSection{
+        margin: 0rem 0 5rem 0;
+    }
+}
