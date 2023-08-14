@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogLayout from '@theme/BlogLayout';
-import BlogListPaginator from '@theme/BlogListPaginator';
-// import BlogPostItems from '@theme/BlogPostItems';
+// import BlogListPaginator from '@theme/BlogListPaginator';
+import BlogPostItems from '@theme/BlogPostItems';
 
 import style from './index.module.css'
 
@@ -12,9 +12,9 @@ function BlogListPageContent(props) {
 		<BlogLayout>
 			<div className={style.BlogPostItems}>
 
-				{/* <BlogPostItems items={items} /> */}
+				<BlogPostItems items={items} />
 			</div>
-			<BlogListPaginator metadata={metadata} />
+			{/* <BlogListPaginator metadata={metadata} /> */}
 		</BlogLayout>
 	);
 }
