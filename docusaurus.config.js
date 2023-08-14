@@ -31,7 +31,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  customFields:{
+    blog: require('./config/blog.js'),
+  },
   presets: [
     [
       'classic',
