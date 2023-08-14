@@ -23,10 +23,10 @@ function useReadingTimePlural() {
     );
   };
 }
-function ReadingTime({readingTime}) {
-  const readingTimePlural = useReadingTimePlural();
-  return <>{readingTimePlural(readingTime)}</>;
-}
+// function ReadingTime({readingTime}) {
+//   const readingTimePlural = useReadingTimePlural();
+//   return <>{readingTimePlural(readingTime)}</>;
+// }
 function Date({date, formattedDate}) {
   return (
     <time dateTime={date} itemProp="datePublished">
@@ -34,21 +34,22 @@ function Date({date, formattedDate}) {
     </time>
   );
 }
-function Spacer() {
-  return <>{' · '}</>;
+function Img({image}){
+  return (
+    // <image>
+      <img src={image} alt='test' />
+    // </image>
+  )
 }
 export default function BlogPostItemHeaderInfo({className}) {
   const {metadata} = useBlogPost();
-  const {date, formattedDate, readingTime} = metadata;
+  const {frontMatter} = metadata;
+  // console.log(metadata)
   return (
     <div className={`${styles.container} margin-vert--md ${className}`}>
-      <Date date={date} formattedDate={formattedDate} />
-      {typeof readingTime !== 'undefined' && (
-        <>
-          <Spacer />
-          <ReadingTime readingTime={readingTime} />
-        </>
-      )}
+      {/* <Date date={date} formattedDate={formattedDate} /> */}
+      <Img image={frontMatter.test_image}/>
+      {frontMatter.test_image}
     </div>
   );
 }

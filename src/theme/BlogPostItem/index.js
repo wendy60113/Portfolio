@@ -4,6 +4,7 @@ import BlogPostItemContainer from '@theme/BlogPostItem/Container';
 import BlogPostItemHeader from '@theme/BlogPostItem/Header';
 import BlogPostItemContent from '@theme/BlogPostItem/Content';
 import BlogPostItemFooter from '@theme/BlogPostItem/Footer';
+
 // apply a bottom margin in list view
 function useContainerClassName() {
   const {isBlogPostPage} = useBlogPost();
