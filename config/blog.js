@@ -1,6 +1,22 @@
 module.exports = [
     {
         slug: "test",
+        title: "專案名稱",
+        author: {
+            name: "Gao Wei",
+            title: "Docusaurus Core Team",
+            url: "https://github.com/wgao19",
+            image_url: "https://github.com/wgao19.png"
+        },
+        test_image: "/img/docusaurus.png",
+        tags: [
+            "前端程式",
+            "網頁設計",
+            "資料庫設計"
+        ]
+    },
+    {
+        slug: "test",
         title: "test",
         author: {
             name: "Gao Wei",
@@ -8,10 +24,25 @@ module.exports = [
             url: "https://github.com/wgao19",
             image_url: "https://github.com/wgao19.png"
         },
-        test_image: "./2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
+        test_image: "/img/docusaurus.png",
         tags: [
-            "hola",
-            "docusaurus"
+            "前端程式",
+            "網頁設計"
+        ]
+    },
+    {
+        slug: "test",
+        title: "test",
+        author: {
+            name: "Gao Wei",
+            title: "Docusaurus Core Team",
+            url: "https://github.com/wgao19",
+            image_url: "https://github.com/wgao19.png"
+        },
+        test_image: "/img/docusaurus.png",
+        tags: [
+            "資料庫設計",
+            "網頁設計"
         ]
     }
   ];

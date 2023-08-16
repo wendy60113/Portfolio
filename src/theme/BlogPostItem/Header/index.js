@@ -4,8 +4,8 @@ import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info';
 export default function BlogPostItemHeader() {
   return (
     <header>
-      <BlogPostItemHeaderTitle />
       <BlogPostItemHeaderInfo />
+      <BlogPostItemHeaderTitle />
     </header>
   );
 }

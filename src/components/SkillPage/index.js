@@ -92,8 +92,8 @@ export default function SkillPage(){
         <section className={styles.container}>
             <label className={styles.title}>技術能力</label>
             {skillData.map((item,idx)=>(
-                <div className={styles.skillSection}>
-                    <label className={styles.title} key={'skillsection-'+idx}>{item.title}</label>
+                <div className={styles.skillSection} key={'skillsection-'+idx}>
+                    <label className={styles.title} >{item.title}</label>
                     <div className={styles.row}>
                         {item.list.map((skills,idx)=>(
                             <div className={styles.col} key={'skillicons-'+idx}>
