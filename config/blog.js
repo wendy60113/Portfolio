@@ -13,7 +13,8 @@ module.exports = [
             "前端程式",
             "網頁設計",
             "資料庫設計"
-        ]
+        ],
+        url:'/blog/test'
     },
     {
         slug: "test",
@@ -28,7 +29,8 @@ module.exports = [
         tags: [
             "前端程式",
             "網頁設計"
-        ]
+        ],
+        url:'/blog/test'
     },
     {
         slug: "test",
@@ -43,6 +45,7 @@ module.exports = [
         tags: [
             "資料庫設計",
             "網頁設計"
-        ]
+        ],
+        url:'/blog/test'
     }
   ];

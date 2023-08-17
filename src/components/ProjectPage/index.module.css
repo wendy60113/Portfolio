@@ -21,6 +21,11 @@
     text-align: left;
     cursor: pointer;
     font-family: Verdana;
+    color: #333;
+}
+.col:hover{
+    color: #333;
+    text-decoration: none;
 }
 .proj img{
     width: 100%;
