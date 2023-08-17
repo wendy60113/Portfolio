@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogLayout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 // import BlogListPaginator from '@theme/BlogListPaginator';
 // import BlogPostItems from '@theme/BlogPostItems';
 
@@ -24,7 +25,7 @@ function BlogListPageContent(props) {
 		<section className={styles.container}>
 			<section className={styles.flexContainer}>
 				{items.map((item,idx)=>(
-					<div key={'proj-'+idx} className={styles.col}>
+					<Link to={item.content.metadata.permalink}  key={'proj-'+idx} className={styles.col}>
 						<div className={styles.proj}>
 							<img src={item.content.frontMatter.test_image} alt='test'></img>
 						</div>
@@ -34,7 +35,7 @@ function BlogListPageContent(props) {
 						<div className={styles.proj} style={{margin:'2% 0 0 0'}}>
 							<label>{item.content.frontMatter.title}</label>
 						</div>
-					</div>
+					</Link>
 				))}
 			</section>
 		</section>
