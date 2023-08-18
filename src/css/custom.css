@@ -58,3 +58,10 @@ html[data-theme="light"] .navbar__item.navbar__link.header-github-link{
   background: url("../../static/img/navbar/github_dark.svg") 0 center / 20px 20px no-repeat;
   background-position: center;
 }
+.skillNavTitle{
+  color: var(--ifm-navbar-link-color);
+  font-weight: var(--ifm-font-weight-semibold);
+}
+.skillNavTitle:hover{
+  text-decoration: none;
+}

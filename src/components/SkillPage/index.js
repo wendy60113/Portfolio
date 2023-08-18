@@ -6,6 +6,7 @@ import { BiLogoHtml5,BiLogoJavascript,BiLogoVuejs,BiLogoReact,BiLogoCss3,BiLogoS
 import { SiMysql,SiAdobeillustrator,SiAdobephotoshop,SiAdobexd,SiAdobeaftereffects,SiAdobepremierepro } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 
+import { forwardRef } from "react";
 
 
 const skillData=[
@@ -87,10 +88,10 @@ const skillData=[
     }
 ]
 
-export default function SkillPage(){
+export default forwardRef(function SkillPage(props,ref){
     return(
         <section className={styles.container}>
-            <label className={styles.title}>技術能力</label>
+            <label className={styles.title} ref={ref}>技術能力</label>
             {skillData.map((item,idx)=>(
                 <div className={styles.skillSection} key={'skillsection-'+idx}>
                     <label className={styles.title} >{item.title}</label>
@@ -106,4 +107,4 @@ export default function SkillPage(){
             ))}
         </section>
     )
-}
+})

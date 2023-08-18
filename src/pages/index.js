@@ -5,14 +5,30 @@ import IntroPage from '@site/src/components/IntroPage';
 import SkillPage from '../components/SkillPage';
 import ProjectPage from '../components/ProjectPage';
 import styles from './index.module.css';
+import { useRef } from "react";
+import { useLocation } from "react-router-dom";
+
+
 
 export default function Home() {
+  const ref = useRef(null)
+  const location = useLocation()
+  const scrollingTop = (event) => {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "start"
+      });
+    };
+    if(location.hash=='#ref'&&ref.current!=null){
+      scrollingTop()
+    }
   return (
     <Layout>
       <main>
         <HomePage />
         <IntroPage/>
-        <SkillPage/>
+        <SkillPage ref={ref} />
         <ProjectPage/>
       </main>
     </Layout>

@@ -73,10 +73,12 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/#ref',
+            // type: 'docSidebar',
+            // sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '技術能力',
+            class: 'skillNavTitle'
           },
           {
             to: '/blog', 
