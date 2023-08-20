@@ -1,7 +1,39 @@
 .container{
     margin: 5% 10%;
+    display: flex;
+}
+.col{
+}
+.col4{
+    width: 80%;
+}
+.col1{
+    width: 20%;
+    position: fixed;
+    right: 0;
+}
+.col1 li a{
+    text-decoration: none;
+    color: var(--ifm-toc-link-color);
+}
+.col1 li a:hover{
+    color:var(--ifm-color-primary);
+}
+.col1 ul{
+    list-style-type: none;
+}
+.col1 ul:first-child{
+    border-left: 1px solid var(--ifm-toc-border-color);
 }
 .title{
     font-size: 4rem;
     font-weight: 700;
+}
+@media (max-width: 576px) {
+    .col4{
+        width: 100%;
+    }
+    .col1{
+        display: none;
+    }
 }
