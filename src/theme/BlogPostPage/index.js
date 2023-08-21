@@ -8,16 +8,39 @@ import styles from './index.module.css'
 function BlogPostPageContent(props) {
 	
 	const { content:BlogPostContents } = props;
-		console.log(props)
-		const toc = props.content.toc
+	console.log(props)
+	const toc = props.content.toc
+	
 	return (
 		<BlogLayout>
 			<article className={styles.container}>
+				<div className={styles.banner}>
+					<img src={props.content.frontMatter.banner_img}></img>
+				</div>
 				<div className={`${styles.col} ${styles.col4}`}>
 					<label className={styles.title}>{props.content.metadata.title}</label>
-					<MDXProvider components={MDXComponents}>
-						<BlogPostContents />
-					</MDXProvider>
+					<div className={styles.tag}>
+						{props.content.frontMatter.tags.map((item,idx)=>(
+							<span key={'tag-'+idx}>{item}</span>
+						))}
+					</div>
+					<div className={styles.info}>
+						<span className={styles.title}>日期</span>
+						<span className={styles.content}>{props.content.metadata.formattedDate}</span>
+					</div>
+					<div className={styles.info}>
+						<span className={styles.title}>負責項目</span>
+						<span className={styles.content}>{props.content.frontMatter.description}</span>
+					</div>
+					<div className={styles.info}>
+						<span className={styles.title}>使用工具</span>
+						<span className={styles.content}>{props.content.frontMatter.tool}</span>
+					</div>
+					<div className={styles.mdxContent}>
+						<MDXProvider components={MDXComponents}>
+							<BlogPostContents />
+						</MDXProvider>
+					</div>
 				</div>
 
 				<div className={`${styles.col} ${styles.col1}`}>

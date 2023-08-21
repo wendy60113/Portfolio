@@ -1,8 +1,14 @@
 .container{
-    margin: 5% 10%;
+    margin: 5% 10% 5% 10%;
     display: flex;
+    flex-wrap: wrap;
+    color: #333;
+}
+.banner{
+    width: 100%;
 }
 .col{
+    margin-top: 3%;
 }
 .col4{
     width: 80%;
@@ -26,8 +32,33 @@
     border-left: 1px solid var(--ifm-toc-border-color);
 }
 .title{
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.tag{
+    margin: 0 0 4% 0;
+}
+.tag span{
+    border-radius: 30px;
+    padding: 0.2rem 0.7rem;
+    background-color: #F0F1F5;
+    font-size: 0.8rem;
+    margin: 0 2% 0 0;
+}
+.info{
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+.info .title{
+    font-size: 1rem;
+    width: 6rem;
+    font-weight: 500;
+}
+.info .content{
+    color: #666;
+}
+.mdxContent{
+    margin: 4% 0 0 0;
 }
 @media (max-width: 576px) {
     .col4{
