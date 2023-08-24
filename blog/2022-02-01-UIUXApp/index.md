@@ -8,4 +8,10 @@ description: UIUX設計、專案時程管理
 tool: Adobe XD
 ---
 
-![UIUX pic](./12_3.jpg)
+## User Story Map
+
+![UIUX pic](./YoutorApp-03.jpg)
+
+## Functional Map
+
+![UIUX pic](./YoutorApp-08.jpg)

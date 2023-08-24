@@ -6,6 +6,7 @@
 }
 .banner{
     width: 100%;
+    z-index: 1;
 }
 .col{
     margin-top: 3%;

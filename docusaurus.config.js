@@ -86,7 +86,7 @@ const config = {
             position: 'left'
           },
           {
-            href: "https://github.com/questdb/questdb",
+            href: "https://github.com/wendy60113",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",

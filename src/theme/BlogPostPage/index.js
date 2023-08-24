@@ -43,15 +43,15 @@ function BlogPostPageContent(props) {
 					</div>
 				</div>
 
-				<div className={`${styles.col} ${styles.col1}`}>
-					<TOCInline
-						// Only show h2 and h4 headings
-						toc={toc.filter((node) => node.level === 2 || node.level === 4)}
-						minHeadingLevel={2}
-						// Show h4 headings in addition to the default h2 and h3 headings
-						maxHeadingLevel={4}
-					/>
-				</div>
+					<div className={`${styles.col} ${styles.col1}`}>
+						<TOCInline
+							// Only show h2 and h4 headings
+							toc={toc.filter((node) => node.level === 2 || node.level === 3)}
+							minHeadingLevel={2}
+							// Show h4 headings in addition to the default h2 and h3 headings
+							maxHeadingLevel={3}
+						/>
+					</div>
 			</article>
 		</BlogLayout>
 	);
