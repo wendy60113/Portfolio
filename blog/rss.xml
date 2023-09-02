@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Wendy Portfolio Blog</title>
+        <link>https://wendy60113.github.io/portfolio/blog</link>
+        <description>Wendy Portfolio Blog</description>
+        <lastBuildDate>Sun, 20 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[NPM-巢狀選單元件]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/NPM-巢狀選單元件</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/NPM-巢狀選單元件</guid>
+            <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[前端程式 / npm上架 / UI/UX設計]]></description>
+            <category>前端程式</category>
+            <category>UI/UX設計</category>
+        </item>
+        <item>
+            <title><![CDATA[咖啡廳搜尋網頁]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/咖啡廳搜尋網頁</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/咖啡廳搜尋網頁</guid>
+            <pubDate>Sun, 25 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[資料庫設計 / api文件撰寫 / UI/UX設計 / 網頁設計]]></description>
+            <category>資料庫設計</category>
+            <category>前端程式</category>
+            <category>UI/UX設計</category>
+            <category>網頁設計</category>
+        </item>
+        <item>
+            <title><![CDATA[信用卡輸入網頁動態]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/信用卡輸入網頁動態</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/信用卡輸入網頁動態</guid>
+            <pubDate>Sun, 23 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[UIUX設計 / 網頁動態]]></description>
+            <category>前端程式</category>
+            <category>UI/UX設計</category>
+            <category>網頁設計</category>
+        </item>
+        <item>
+            <title><![CDATA[產品形象網站]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/產品形象網站</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/產品形象網站</guid>
+            <pubDate>Sat, 05 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[網頁切版]]></description>
+            <category>網頁設計</category>
+            <category>前端程式</category>
+        </item>
+        <item>
+            <title><![CDATA[測驗網頁]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/測驗網頁</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/測驗網頁</guid>
+            <pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[UIUX設計 / 前端網頁切版 / 測驗規則程式撰寫]]></description>
+            <category>前端程式</category>
+            <category>UI/UX設計</category>
+            <category>網頁設計</category>
+        </item>
+        <item>
+            <title><![CDATA[數位學習APP設計]]></title>
+            <link>https://wendy60113.github.io/portfolio/blog/數位學習APP設計</link>
+            <guid>https://wendy60113.github.io/portfolio/blog/數位學習APP設計</guid>
+            <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[UIUX設計、專案時程管理]]></description>
+            <category>UI/UX設計</category>
+        </item>
+    </channel>
+</rss>
