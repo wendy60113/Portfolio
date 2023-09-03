@@ -1,71 +1,81 @@
-.container{
-    margin: 5% 10% 5% 10%;
-    display: flex;
-    flex-wrap: wrap;
-    color: #333;
+.container {
+  margin: 5% 10% 5% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #333;
 }
-.banner{
-    width: 100%;
-    z-index: 1;
+.banner {
+  width: 100%;
+  z-index: 1;
 }
-.col{
-    margin-top: 3%;
+.col {
+  margin-top: 3%;
 }
-.col4{
-    width: 80%;
+.col4 {
+  width: 80%;
 }
-.col1{
-    width: 20%;
-    position: fixed;
-    right: 0;
+.col1 {
+  width: 20%;
+  position: fixed;
+  right: 0;
 }
-.col1 li a{
-    text-decoration: none;
-    color: var(--ifm-toc-link-color);
+.col1 li a {
+  text-decoration: none;
+  color: var(--ifm-toc-link-color);
 }
-.col1 li a:hover{
-    color:var(--ifm-color-primary);
+.col1 li a:hover {
+  color: var(--ifm-color-primary);
 }
-.col1 ul{
-    list-style-type: none;
+.col1 ul {
+  list-style-type: none;
 }
-.col1 ul:first-child{
-    border-left: 1px solid var(--ifm-toc-border-color);
+.col1 ul:first-child {
+  border-left: 1px solid var(--ifm-toc-border-color);
 }
-.title{
-    font-size: 3rem;
-    font-weight: 900;
+.title {
+  font-size: 3rem;
+  font-weight: 900;
 }
-.tag{
-    margin: 0 0 4% 0;
+.tag {
+  margin: 0 0 4% 0;
 }
-.tag span{
-    border-radius: 30px;
-    padding: 0.2rem 0.7rem;
-    background-color: #F0F1F5;
-    font-size: 0.8rem;
-    margin: 0 2% 0 0;
+.tag span {
+  border-radius: 30px;
+  padding: 0.2rem 0.7rem;
+  background-color: #f0f1f5;
+  font-size: 0.8rem;
+  margin: 0 2% 0 0;
 }
-.info{
-    display: flex;
-    margin: 0 0 1rem 0;
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 1rem 0;
 }
-.info .title{
-    font-size: 1rem;
-    width: 6rem;
-    font-weight: 500;
+.info .title {
+  font-size: 1rem;
+  width: 6rem;
+  font-weight: 500;
 }
-.info .content{
-    color: #666;
+.info .content {
+  color: #666;
 }
-.mdxContent{
-    margin: 4% 0 0 0;
+.mdxContent {
+  margin: 4% 0 0 0;
 }
 @media (max-width: 576px) {
-    .col4{
-        width: 100%;
-    }
-    .col1{
-        display: none;
-    }
+  .col4 {
+    width: 100%;
+  }
+  .col1 {
+    display: none;
+  }
+  .container {
+    margin: 5%;
+  }
+  .info .title {
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+  }
 }
