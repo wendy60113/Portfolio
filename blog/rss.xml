@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Wendy Portfolio Blog</title>
+        <title>Wendy's Portfolio Blog</title>
         <link>https://wendy60113.github.io/portfolio/blog</link>
-        <description>Wendy Portfolio Blog</description>
+        <description>Wendy's Portfolio Blog</description>
         <lastBuildDate>Sun, 20 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
