@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Wendy Portfolio",
+  title: "Wendy's Portfolio",
   tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.ico",
 
   // Set the production url of your site here
   url: "https://wendy60113.github.io",
