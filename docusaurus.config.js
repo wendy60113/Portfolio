@@ -1,60 +1,57 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wendy Portfolio',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "Wendy Portfolio",
+  tagline: "Dinosaurs are cool",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://wendy60113.github.io',
+  url: "https://wendy60113.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/portfolio/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'wendy60113', // Usually your GitHub org/user name.
-  projectName: 'portfolio', // Usually your repo name.
+  organizationName: "wendy60113", // Usually your GitHub org/user name.
+  projectName: "portfolio", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
-  customFields:{
-    blog: require('./config/blog.js'),
+  customFields: {
+    blog: require("./config/blog.js"),
   },
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-				blog: {
-					showReadingTime: true,
-					postsPerPage: 12,
-				},
+        blog: {
+          showReadingTime: true,
+          postsPerPage: 12,
+        },
         theme: {
-          customCss:[
-            require.resolve('./src/css/custom.css'),
-          ], 
-          
+          customCss: [require.resolve("./src/css/custom.css")],
         },
       }),
     ],
@@ -62,31 +59,31 @@ const config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: '',
+        title: "",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            to: '/#ref',
+            to: "/#ref",
             // type: 'docSidebar',
             // sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '技術能力',
-            class: 'skillNavTitle'
+            position: "left",
+            label: "技術能力",
+            class: "skillNavTitle",
           },
           {
-            to: '/blog', 
-            label: '專案', 
-            position: 'left'
+            to: "/blog",
+            label: "專案",
+            position: "left",
           },
           {
             href: "https://github.com/wendy60113",
