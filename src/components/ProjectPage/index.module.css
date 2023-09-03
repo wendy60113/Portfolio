@@ -1,63 +1,84 @@
-.container{
-    justify-content:center;
-    text-align: center;
-    margin: 5% 0;
+.container {
+  justify-content: center;
+  text-align: center;
+  margin: 5% 0;
 }
-.flexContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 2% 0 0 0;
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% 0 0 0;
 }
-.title{
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: 2.5px;
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
 }
-.col{
-    width: 18%;
-    margin: 2%;
-    /* padding: 1rem 1rem; */
-    text-align: left;
-    cursor: pointer;
-    font-family: Verdana;
-    color: #333;
+.col {
+  width: 18%;
+  margin: 2%;
+  /* padding: 1rem 1rem; */
+  text-align: left;
+  cursor: pointer;
+  font-family: Verdana;
+  color: #333;
 }
-.col:hover{
-    color: #333;
-    text-decoration: none;
+.col:hover {
+  color: #333;
+  text-decoration: none;
 }
-.proj img{
-    width: 100%;
-    background-color: #F0F1F5;
+.proj img {
+  width: 100%;
+  background-color: #f0f1f5;
 }
-.proj span{
-    border-radius: 30px;
-    padding: 0.2rem 0.7rem;
-    background-color: #F0F1F5;
-    font-size: 0.8rem;
-    margin: 0 2% 0 0;
+.proj span {
+  border-radius: 30px;
+  padding: 0.2rem 0.7rem;
+  background-color: #f0f1f5;
+  font-size: 0.8rem;
+  margin: 0 2% 0 0;
 }
-.proj label{
-    font-weight: 700;
-    margin: 2% 0 0 0;
+.proj label {
+  font-weight: 700;
+  margin: 2% 0 0 0;
+}
+.moreBtn {
+  margin: 2rem;
+}
+.moreBtn span {
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+}
+.moreBtn span:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+.moreBtn span:active {
+  background-color: var(--ifm-color-primary-darker);
+}
+.moreBtn:active {
+  transform: scale(0.9);
 }
 
 @media (max-width: 992px) {
-    .container{
-        padding: 1rem 3rem;
-    }
-    .col{
-        width: 30%;
-    }
-    .title{
-        font-size: 2rem;
-    }
+  .container {
+    padding: 1rem 3rem;
+  }
+  .col {
+    width: 30%;
+  }
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .col{
-        width: 100%;
-        margin: 0 0 3rem 0;
-    }
+  .col {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
 }
