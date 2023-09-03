@@ -1,8 +1,8 @@
 ---
 slug: NPM-巢狀選單元件
 title: NPM-巢狀選單元件
-test_image: /img/cover/nesteddropdown01.jpg
-banner_img: /img/banner/nesteddropdown06.jpg
+test_image: /portfolio/img/cover/nesteddropdown01.jpg
+banner_img: /portfolio/img/banner/nesteddropdown06.jpg
 tags: [前端程式, UI/UX設計]
 description: 前端程式 / npm上架 / UI/UX設計
 tool: npm / vuejs / BootstrapVue

@@ -1,8 +1,8 @@
 ---
 slug: 信用卡輸入網頁動態
 title: 信用卡輸入網頁動態
-test_image: /img/cover/creditcardweb01.jpg
-banner_img: /img/banner/creditcardweb06.jpg
+test_image: /portfolio/img/cover/creditcardweb01.jpg
+banner_img: /portfolio/img/banner/creditcardweb06.jpg
 tags: [前端程式, UI/UX設計, 網頁設計]
 description: UIUX設計 / 網頁動態
 tool: Html / CSS / Reactjs / Figma
