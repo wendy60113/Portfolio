@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[936],{9791:l=>{l.exports=JSON.parse('{"label":"UI/UX\u8a2d\u8a08","permalink":"/blog/tags/ui-ux\u8a2d\u8a08","allTagsPath":"/blog/tags","count":5}')}}]);
