@@ -39,6 +39,9 @@
   color: #333;
   z-index: 2;
 }
+html[data-theme="dark"] .TitleName {
+  color: #e3e3e3;
+}
 .RectLine {
   position: absolute;
   top: 20%;

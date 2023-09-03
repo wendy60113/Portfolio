@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   color: #333;
 }
+html[data-theme="dark"] .container {
+  color: #e3e3e3;
+}
 .banner {
   width: 100%;
   z-index: 1;
@@ -36,6 +39,9 @@
   font-size: 3rem;
   font-weight: 900;
 }
+html[data-theme="dark"] .title {
+  color: #e3e3e3;
+}
 .tag {
   margin: 0 0 4% 0;
 }
@@ -45,6 +51,10 @@
   background-color: #f0f1f5;
   font-size: 0.8rem;
   margin: 0 2% 0 0;
+}
+html[data-theme="dark"] .tag span {
+  background-color: #323234;
+  color: #e3e3e3;
 }
 .info {
   display: flex;
@@ -58,6 +68,9 @@
 }
 .info .content {
   color: #666;
+}
+html[data-theme="dark"] .info .content {
+  color: #e3e3e3;
 }
 .mdxContent {
   margin: 4% 0 0 0;
