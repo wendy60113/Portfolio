@@ -1,41 +1,46 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 10% 0;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10% 0;
 }
-.col{
-    width: 30%;
-    margin: 2%;
-    padding: 1rem 3rem;
-    text-align: center;
-    cursor: pointer;
-    font-family: Verdana;
+.col {
+  width: 30%;
+  margin: 2%;
+  padding: 1rem 3rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: Verdana;
 }
-.col:hover .icon{
-    fill: var(--ifm-color-primary-light);
+.col:hover .icon {
+  fill: var(--ifm-color-primary-light);
 }
-.col:hover label{
-    color: var(--ifm-color-primary-dark);
+.col:hover label {
+  color: var(--ifm-color-primary-dark);
 }
-.col:hover span{
-    color: var(--ifm-color-primary-light);
+.col:hover span {
+  color: var(--ifm-color-primary-light);
 }
-.col label{
-    color: #333;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 200%;
+.col label {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 200%;
 }
-
-.col span{
-    color: #888;
-    font-weight: 400;
-    line-height: 160%; /* 25.6px */
-    letter-spacing: 0.32px;
+html[data-theme="dark"] .col label {
+  color: #efefef;
+}
+html[data-theme="dark"] .col:hover label {
+  color: var(--ifm-color-primary-light);
+}
+.col span {
+  color: #888;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.32px;
 }
 @media (max-width: 992px) {
-.col{
+  .col {
     width: 100%;
-}
+  }
 }

@@ -1,63 +1,70 @@
-.container{
-    justify-content:center;
-    text-align: center;
-    margin: 5% 10%;
+.container {
+  justify-content: center;
+  text-align: center;
+  margin: 5% 10%;
 }
-.flexContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 2% 0 0 0;
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% 0 0 0;
 }
-.title{
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: 2.5px;
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
 }
-.col{
-    width: 25%;
-    margin: 2%;
-    /* padding: 1rem 1rem; */
-    text-align: left;
-    cursor: pointer;
-    font-family: Verdana;
-    color: #333;
+.col {
+  width: 25%;
+  margin: 2%;
+  /* padding: 1rem 1rem; */
+  text-align: left;
+  cursor: pointer;
+  font-family: Verdana;
+  color: #333;
 }
-.col:hover{
-    text-decoration: none;
-    color: #333;
+.col:hover {
+  text-decoration: none;
+  color: #333;
 }
-.proj img{
-    width: 100%;
-    background-color: #F0F1F5;
+.proj img {
+  width: 100%;
+  background-color: #f0f1f5;
 }
-.proj span{
-    border-radius: 30px;
-    padding: 0.2rem 0.7rem;
-    background-color: #F0F1F5;
-    font-size: 0.8rem;
-    margin: 0 2% 0 0;
+.proj span {
+  border-radius: 30px;
+  padding: 0.2rem 0.7rem;
+  background-color: #f0f1f5;
+  font-size: 0.8rem;
+  margin: 0 2% 0 0;
 }
-.proj label{
-    font-weight: 700;
-    margin: 2% 0 0 0;
+html[data-theme="dark"] .proj span {
+  background-color: #323234;
+  color: #e3e3e3;
+}
+.proj label {
+  font-weight: 700;
+  margin: 2% 0 0 0;
+}
+html[data-theme="dark"] .proj label {
+  color: #e3e3e3;
 }
 
 @media (max-width: 992px) {
-    .container{
-        padding: 1rem 3rem;
-    }
-    .col{
-        width: 40%;
-    }
-    .title{
-        font-size: 2rem;
-    }
+  .container {
+    padding: 1rem 3rem;
+  }
+  .col {
+    width: 40%;
+  }
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .col{
-        width: 100%;
-        margin: 0 0 3rem 0;
-    }
+  .col {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
 }

@@ -1,8 +1,8 @@
 ---
 slug: 咖啡廳搜尋網頁
 title: 咖啡廳搜尋網頁
-test_image: /img/cover/cafelist_01.jpg
-banner_img: /img/banner/cafelist_06.jpg
+test_image: /portfolio/img/cover/cafelist_01.jpg
+banner_img: /portfolio/img/banner/cafelist_06.jpg
 tags: [資料庫設計, 前端程式, UI/UX設計, 網頁設計]
 description: 資料庫設計 / api文件撰寫 / UI/UX設計 / 網頁設計
 tool: mySql / nodejs / RESTful API / Html / CSS / Vuejs / Figma
