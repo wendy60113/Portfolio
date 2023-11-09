@@ -8,6 +8,16 @@ description: 資料庫設計 / api文件撰寫 / UI/UX設計 / 網頁設計
 tool: mySql / nodejs / RESTful API / Html / CSS / Vuejs / Figma
 ---
 
+## Source Code
+
+此專案採前後端分離製作
+
+### [Frontend](https://github.com/wendy60113/coffeeShopCollection)
+
+### [Backend](https://github.com/wendy60113/coffeeshopApi)
+
+---
+
 ## Introduction
 
 ### Functional Map
