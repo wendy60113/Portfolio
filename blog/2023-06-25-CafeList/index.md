@@ -54,124 +54,352 @@ goShop([查看店家]) --call_api--> shop[店家資訊]
 
 ## API 文件
 
-**Base URL: `https://localhost:3000/api`**
+### Schema
 
-| API            | Method | URL              |
-| -------------- | ------ | ---------------- |
-| 咖啡廳資料表   |
-| 檢視資料列表   | GET    | api/cafeshop     |
-| 查詢單筆資料   | GET    | api/cafeshop/:id |
-| 新增資料       | POST   | api/cafeshop     |
-| 編輯資料       | PUT    | api/cafeshop/:id |
-| 刪除資料       | DELETE | api/cafeshop/:id |
-| 我的最愛資料表 |
-| 檢視資料列表   | GET    | api/favorite     |
-| 新增資料       | POST   | api/favorite     |
-| 刪除資料       | DELETE | api/favorite/:id |
+<details>
+ <summary>
+    <strong>User List</strong>
+</summary>
 
-**咖啡廳資料**
+> | name | data type | requried | description |
+> | ---- | --------- | -------- | ----------- |
+> | id   | int       |          | 自動產生 id |
+> | name | string    | Y        | 使用者帳號  |
 
-**API:**
-查詢咖啡廳資料列表  
-**URL:**
-https://localhost:3000/api/cafeshop  
-**Method :**
-GET
+</details>
 
-**Response Body :**
+<details>
+ <summary>
+    <strong>Cafe List</strong>
+</summary>
 
-| Props     | Type    | Required | Default |
-| --------- | ------- | -------- | ------- |
-| id        | string  | -        | auto    |
-| name      | string  | -        | -       |
-| address   | string  | -        | -       |
-| latitude  | integer | -        | -       |
-| longitude | integer | -        | -       |
+> | name       | data type | requried | description               |
+> | ---------- | --------- | -------- | ------------------------- |
+> | id         | int       |          | 自動產生 id               |
+> | name       | string    | Y        | 咖啡廳名稱                |
+> | address    | string    | Y        | 咖啡廳地址                |
+> | isFavorite | string    |          | 自動產生 (0:false,1:true) |
 
----
+</details>
 
-**API :** 查詢咖啡廳單筆資料  
- **URL :** https://localhost:3000/api/cafeshop/:id  
- **Method :** GET
+<details>
+ <summary>
+    <strong>Favorite List</strong>
+</summary>
 
-**Response Body :**
+> | name       | data type | requried | description |
+> | ---------- | --------- | -------- | ----------- |
+> | id         | int       |          | 自動產生 id |
+> | cafeshopId | int       | Y        | 咖啡廳編號  |
+> | userId     | int       | Y        | 使用者編號  |
 
-| Props     | Type    | Required | Default |
-| --------- | ------- | -------- | ------- |
-| id        | string  | -        | -       |
-| name      | string  | -        | -       |
-| address   | string  | -        | -       |
-| latitude  | integer | -        | -       |
-| longitude | integer | -        | -       |
+</details>
 
----
+### API
 
-**API:** 新增咖啡廳資料  
-**URL:** https://localhost:3000/api/cafeshop  
-**Method :** POST
+<details>
+ <summary>
+    <strong>Cafelist</strong>
+</summary>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#4ac057',color:'#fff',padding:5+'px',marginRight:10+'px'}}>POST</strong>
+        <strong style={{marginRight:10+'px'}}>/cafelist/query</strong>
+        <strong>查詢咖啡廳資料列表</strong>
+    </summary>
 
-**Request Body :**
+#### Parameters
 
-| Props   | Type   | Required | Default |
-| ------- | ------ | -------- | ------- |
-| id      | string | auto     | -       |
-| name    | string | yes      | -       |
-| address | string | yes      | -       |
+none
 
----
+#### Request body
 
-**API:** 編輯咖啡廳資料  
-**URL:** https://localhost:3000/api/cafeshop/:id  
-**Method :** PUT  
-**Request Body :**
+```js
+//example
+{
+    "userId": "1"
+}
+```
 
-| Props     | Type    | Required | Default | Remark               |
-| --------- | ------- | -------- | ------- | -------------------- |
-| id        | string  | yes      | -       |                      |
-| name      | string  | no       | -       |                      |
-| address   | string  | no       | -       |                      |
-| latitude  | integer | no       | -       | address 更新自動更新 |
-| longitude | integer | no       | -       | address 更新自動更新 |
+#### Response
 
----
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
 
-**API:** 刪除咖啡廳資料  
-**URL:** https://localhost:3000/api/cafeshop/:id  
-**Method :** DELETE
+</details>
 
----
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#4ac057',color:'#fff',padding:5+'px',marginRight:10+'px'}}>POST</strong>
+        <strong style={{marginRight:10+'px'}}>/cafelist/add</strong>
+        <strong>新增咖啡廳資料</strong>
+    </summary>
 
-**我的最愛資料**
+#### Parameters
 
-**API:** 檢視我的最愛列表  
-**URL:** https://localhost:3000/api/favorite  
-**Method :** GET  
-**Response Body :**
+none
 
-| Props      |           | Type    | Required | Default |
-| ---------- | --------- | ------- | -------- | ------- |
-| id         |           | string  | -        | -       |
-| cafeshopId |           | string  | -        | -       |
-| cafeList   |           | object  | -        | -       |
-|            | name      | string  | -        | -       |
-|            | address   | string  | -        | -       |
-|            | latitude  | integer | -        | -       |
-|            | longitude | integer | -        | -       |
+#### Request body
 
----
+```js
+//example
+{
+  "name": "shop name",
+  "address": "shop address"
+}
+```
 
-**API:** 新增我的最愛  
-**URL:** https://localhost:3000/api/favorite  
-**Method :** POST  
-**Request Body :**
+#### Response
 
-| Props      | Type   | Required | Default |
-| ---------- | ------ | -------- | ------- |
-| id         | string | auto     | -       |
-| cafeshopId | string | yes      | -       |
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
 
----
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#40a0de',color:'#fff',padding:5+'px',marginRight:10+'px'}}>GET</strong>
+        <strong style={{marginRight:10+'px'}}>/cafelist/:id</strong>
+        <strong>查詢咖啡廳單筆資料</strong>
+    </summary>
 
-**API:** 刪除我的最愛  
-**URL:** https://localhost:3000/favorite/:id  
-**Method :** DELETE
+#### Parameters
+
+> | name | requried | description |
+> | ---- | -------- | ----------- |
+> | id   | Y        | 咖啡廳 id   |
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response     |
+> | --------- | ------------ |
+> | 200       | results      |
+> | 400       | error        |
+> | 404       | 找不到此項目 |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#ffa524',color:'#fff',padding:5+'px',marginRight:10+'px'}}>PUT</strong>
+        <strong style={{marginRight:10+'px'}}>/cafelist/:id</strong>
+        <strong>編輯咖啡廳單筆資料</strong>
+    </summary>
+
+#### Parameters
+
+none
+
+#### Request body
+
+```js
+{
+  "name": "shop name",
+  "address": "shop address",
+  "id": "306"
+}
+```
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#ff6565',color:'#fff',padding:5+'px',marginRight:10+'px'}}>DELETE</strong>
+        <strong style={{marginRight:10+'px'}}>/cafelist/:id</strong>
+        <strong>刪除咖啡廳單筆資料</strong>
+    </summary>
+
+#### Parameters
+
+> | name | requried | description |
+> | ---- | -------- | ----------- |
+> | id   | Y        | 咖啡廳 id   |
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response     |
+> | --------- | ------------ |
+> | 200       | results      |
+> | 400       | error        |
+> | 404       | 找不到此項目 |
+
+</details>
+</details>
+<details>
+ <summary>
+    <strong>Favorite</strong>
+</summary>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#40a0de',color:'#fff',padding:5+'px',marginRight:10+'px'}}>GET</strong>
+        <strong style={{marginRight:10+'px'}}>/favorite</strong>
+        <strong>查詢我的最愛資料列表</strong>
+    </summary>
+
+#### Parameters
+
+none
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response          |
+> | --------- | ----------------- |
+> | 200       | {Msg:Msg,list:[]} |
+> | 400       | error             |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#4ac057',color:'#fff',padding:5+'px',marginRight:10+'px'}}>POST</strong>
+        <strong style={{marginRight:10+'px'}}>/favorite</strong>
+        <strong>新增我的最愛單筆資料</strong>
+    </summary>
+
+#### Parameters
+
+none
+
+#### Request body
+
+```js
+{
+  "cafeshopId": 201,
+  "userId": 1
+}
+```
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | result   |
+> | 400       | error    |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#ff6565',color:'#fff',padding:5+'px',marginRight:10+'px'}}>DELETE</strong>
+        <strong style={{marginRight:10+'px'}}>/favorite/:userId/:cafeshopId</strong>
+        <strong>刪除我的最愛單筆資料</strong>
+    </summary>
+
+#### Parameters
+
+> | name       | requried | description    |
+> | ---------- | -------- | -------------- |
+> | userId     | Y        | userlist -> id |
+> | cafeshopId | Y        | cafelist -> id |
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | result   |
+> | 400       | error    |
+
+</details>
+</details>
+<details>
+ <summary>
+    <strong>Userlist</strong>
+</summary>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#40a0de',color:'#fff',padding:5+'px',marginRight:10+'px'}}>GET</strong>
+        <strong style={{marginRight:10+'px'}}>/userlist</strong>
+        <strong>查詢使用者帳號列表</strong>
+    </summary>
+
+#### Parameters
+
+none
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#4ac057',color:'#fff',padding:5+'px',marginRight:10+'px'}}>POST</strong>
+        <strong style={{marginRight:10+'px'}}>/userlist</strong>
+        <strong>新增使用者帳號</strong>
+    </summary>
+
+#### Parameters
+
+none
+
+#### Request body
+
+```js
+{
+  "name": "wendy"
+}
+```
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
+
+</details>
+<details>
+    <summary>
+        <strong style={{backgroundColor:'#ff6565',color:'#fff',padding:5+'px',marginRight:10+'px'}}>DELETE</strong>
+        <strong style={{marginRight:10+'px'}}>/userlist/:id</strong>
+        <strong>刪除使用者帳號</strong>
+    </summary>
+
+#### Parameters
+
+> | name | requried | description |
+> | ---- | -------- | ----------- |
+> | id   | Y        | 帳號 id     |
+
+#### Request body
+
+none
+
+#### Response
+
+> | http code | response |
+> | --------- | -------- |
+> | 200       | results  |
+> | 400       | error    |
+
+</details>
+</details>

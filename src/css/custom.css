@@ -65,3 +65,6 @@ html[data-theme="light"] .navbar__item.navbar__link.header-github-link{
 .skillNavTitle:hover{
   text-decoration: none;
 }
+.testcolor{
+  background-color: #000;
+}
