@@ -1,5 +1,5 @@
 ---
-slug: 信用卡輸入網頁動態
+slug: proj_4
 title: 信用卡輸入網頁動態
 test_image: /portfolio/img/cover/creditcardweb01.jpg
 banner_img: /portfolio/img/banner/creditcardweb06.jpg

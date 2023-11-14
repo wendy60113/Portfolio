@@ -1,5 +1,5 @@
 ---
-slug: 測驗網頁
+slug: proj_2
 title: 測驗網頁
 test_image: /portfolio/img/cover/Exam.jpg
 banner_img: /portfolio/img/banner/Exam.jpg

@@ -1,5 +1,5 @@
 ---
-slug: 產品形象網站
+slug: proj_3
 title: 產品形象網站
 test_image: /portfolio/img/cover/ProdWeb.jpg
 banner_img: /portfolio/img/banner/ProdWeb.jpg

@@ -1,5 +1,5 @@
 ---
-slug: 數位學習APP設計
+slug: proj_1
 title: 數位學習APP設計
 test_image: /portfolio/img/cover/UIUXApp.jpg
 banner_img: /portfolio/img/banner/UIUXApp.jpg
