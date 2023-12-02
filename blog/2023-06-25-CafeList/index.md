@@ -8,17 +8,11 @@ description: 資料庫設計 / api文件撰寫 / UI/UX設計 / 網頁設計
 tool: mySql / nodejs / RESTful API / Html / CSS / Vuejs / Figma
 ---
 
-## Source Code
+## 簡介
 
-此專案採前後端分離製作
+歡迎來到咖啡廳搜尋網頁，這是一個以 Vue.js 和 Node.js 製作的網頁。此網頁提供使用者可以快速搜尋咖啡廳資訊。透過本網頁可以新增、搜尋咖啡廳資訊，並建立個人帳號來存取個人的「我的最愛」列表。
 
-### [Frontend](https://github.com/wendy60113/coffeeShopCollection)
-
-### [Backend](https://github.com/wendy60113/coffeeshopApi)
-
----
-
-## Introduction
+以下為此專案的各項實作說明：
 
 ### Functional Map
 
@@ -59,6 +53,18 @@ shop[店家資訊] --> addlike[加入我的最愛]
 like[我的最愛] --> goShop([查看店家])
 goShop([查看店家]) --call_api--> shop[店家資訊]
 ```
+
+---
+
+## 資料庫環境
+
+### 使用工具
+
+Docker + MariaDB
+
+### 資料表架構
+
+![database diagram](./diagram.png)
 
 ---
 
@@ -413,3 +419,30 @@ none
 
 </details>
 </details>
+
+---
+
+## 撰寫說明
+
+此專案採前後端分離製作
+
+### 後端
+
+使用套件：
+
+**1. express：作為中介層使用**
+
+- 簡化路由處理、直接指定 Router
+- 設定跨域
+
+**2. body-parser：解析 request body 內容**
+
+### 前端
+
+---
+
+## Source Code
+
+### [Frontend](https://github.com/wendy60113/coffeeShopCollection)
+
+### [Backend](https://github.com/wendy60113/coffeeshopApi)
