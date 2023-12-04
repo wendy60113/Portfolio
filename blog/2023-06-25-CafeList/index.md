@@ -14,7 +14,11 @@ tool: mySql / nodejs / RESTful API / Html / CSS / Vuejs / Figma
 
 以下為此專案的各項實作說明：
 
-### Functional Map
+## 實作流程
+
+### 1.流程設計
+
+#### Functional Map
 
 ```mermaid
 graph LR;
@@ -38,7 +42,7 @@ graph LR;
 
 ---
 
-### Flow Chart
+#### Flow Chart
 
 ```mermaid
 flowchart TD
@@ -56,21 +60,23 @@ goShop([查看店家]) --call_api--> shop[店家資訊]
 
 ---
 
-## 資料庫環境
+### 2.資料表設計
 
-### 使用工具
+#### 資料庫環境
 
 Docker + MariaDB
 
-### 資料表架構
+---
+
+#### 資料表架構
 
 ![database diagram](./diagram.png)
 
 ---
 
-## API 文件
+#### API 文件
 
-### Schema
+##### Schema
 
 <details>
  <summary>
@@ -111,7 +117,7 @@ Docker + MariaDB
 
 </details>
 
-### API
+##### API
 
 <details>
  <summary>
@@ -422,11 +428,17 @@ none
 
 ---
 
-## 撰寫說明
+### 3.Figma 介面設計
+
+[Prototype](https://www.figma.com/proto/f3UUqy0fe4K9HYat19EWMl/Coffee-Shop-Collection?type=design&node-id=1-2&t=gpzmHeeV3s1FqivL-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)
+
+![figma](./figma.png)
+
+---
+
+### 4.後端撰寫
 
 此專案採前後端分離製作
-
-### 後端
 
 使用套件：
 
@@ -437,7 +449,17 @@ none
 
 **2. body-parser：解析 request body 內容**
 
-### 前端
+---
+
+### 5.前端撰寫
+
+（資料補建中...）
+
+---
+
+## Demo 畫面
+
+（資料補建中...）
 
 ---
 
