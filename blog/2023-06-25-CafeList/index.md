@@ -442,24 +442,94 @@ none
 
 使用套件：
 
-**1. express：作為中介層使用**
+**（1） express：作為中介層使用**
 
 - 簡化路由處理、直接指定 Router
 - 設定跨域
 
-**2. body-parser：解析 request body 內容**
+**（2） body-parser：解析 request body 內容**
 
 ---
 
 ### 5.前端撰寫
 
-（資料補建中...）
+**（1）Component 設計**
+
+<div style={{width:70+'%'}}>
+
+![component_1](./component_1.png)
+
+</div>
+
+- **視窗 Component**
+
+    <div style={{width:70+'%'}}>
+
+  ![component_2](./component_2.png)
+
+    </div>
+
+  > | slot name | description |
+  > | --------- | ----------- |
+  > | content   | 內文        |
+  > | footer    | 底部內容    |
+
+  > | props name | type   | default | description |
+  > | ---------- | ------ | ------- | ----------- |
+  > | title      | string | -       | 視窗標題    |
+
+- **輸入框 Component**
+
+  > | props name  | type   | default | description |
+  > | ----------- | ------ | ------- | ----------- |
+  > | v-model     | string | -       | 數據        |
+  > | placeholder | string | -       | 提示文字    |
+
+- **按鈕 Component**
+
+  > | props name      | type                 | default | description |
+  > | --------------- | -------------------- | ------- | ----------- |
+  > | name            | string               | -       | 按鈕文字    |
+  > | backgroundColor | string               | #C8B09C | 按鈕顏色    |
+  > | textColor       | string               | #FFFFFF | 文字顏色    |
+  > | size            | string (sm or empty) | -       | 按鈕尺寸    |
+  > | borderStyle     | string (style)       | -       | 邊線樣式    |
+
+---
+
+<div style={{width:90+'%'}}>
+
+![component_3](./component_3.png)
+
+</div>
+
+- **列表 Component**
+
+  > | props name | type                     | default | description  |
+  > | ---------- | ------------------------ | ------- | ------------ |
+  > | title      | string                   | -       | 咖啡廳名稱   |
+  > | address    | string                   | -       | 咖啡廳地址   |
+  > | striped    | string(colored or light) | -       | 列表顏色分隔 |
+
+- **列表按鈕 Component**
+
+  > | props name | type   | default | description |
+  > | ---------- | ------ | ------- | ----------- |
+  > | icon       | string | -       | icon 名稱   |
+
+---
+
+**（2）api 串接方法**
+
+使用方法：axios
 
 ---
 
 ## Demo 畫面
 
-（資料補建中...）
+![demo_1](./demo_1.png)
+![demo_2](./demo_2.png)
+![demo_3](./demo_3.png)
 
 ---
 
