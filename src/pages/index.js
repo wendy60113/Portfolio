@@ -4,6 +4,7 @@ import HomePage from '@site/src/components/HomePage';
 import IntroPage from '@site/src/components/IntroPage';
 import SkillPage from '../components/SkillPage';
 import ProjectPage from '../components/ProjectPage';
+import NewPost from '../components/NewPost';
 import styles from './index.module.css';
 import { useRef } from "react";
 import { useLocation } from "react-router-dom";
@@ -27,6 +28,7 @@ export default function Home() {
     <Layout>
       <main>
         <HomePage />
+        <NewPost/>
         <IntroPage/>
         <SkillPage ref={ref} />
         <ProjectPage/>
