@@ -1,26 +1,27 @@
 .container {
-  margin: 5% 10% 5% 10%;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 2% 10% 5% 10%;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-column-gap: 15%;
   color: #333;
 }
 html[data-theme="dark"] .container {
   color: #e3e3e3;
 }
 .banner {
-  width: 100%;
-  z-index: 1;
+  margin: 5% 10% 1% 10%;
 }
 .col {
-  margin-top: 3%;
+  /* margin-top: 1%; */
 }
 .col4 {
-  width: 80%;
+  /* width: 80%; */
 }
 .col1 {
-  width: 20%;
-  position: fixed;
-  right: 0;
+  /* width: 20%; */
+  position: sticky;
+  top: 80px;
+  height: fit-content;
 }
 .col1 li a {
   text-decoration: none;
