@@ -11,7 +11,7 @@ import queryString from "query-string";
 import styles from './index.module.css'
 
 function useQuery() {
-    const parsed = queryString.parse(window.location.search);
+    const parsed = queryString.parse(location.search);
 	return parsed
 }
 
