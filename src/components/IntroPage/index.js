@@ -54,7 +54,7 @@ export default function IntroPage() {
   return (
     <section className={styles.container}>
         {IntroData.map((item,idx)=>(
-            <Link to={'/portfolio/blog?tag='+item.Title} key={'intro-'+idx} className={styles.col}>
+            <Link to={'/blog?tag='+item.Title} key={'intro-'+idx} className={styles.col}>
                 {item.SvgIcon}
                 <br/>
                 <label>{item.Title}</label>
