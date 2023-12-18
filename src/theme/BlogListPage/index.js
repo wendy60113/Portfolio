@@ -12,9 +12,13 @@ import { useLocation } from 'react-router-dom';
 import styles from './index.module.css'
 
 function useQuery() {
-	const parsed = ''
-    // const parsed = queryString.parse(location.search);
-	return parsed
+	let location = useLocation();
+	if(location!=''){
+		const searchParams = new URLSearchParams(location.search);
+		return searchParams.get('tag')
+	}else{
+		return null
+	}
 }
 
 function Tag({tags}){
@@ -49,10 +53,10 @@ function BlogListPageContent(props) {
 	//tag篩選
 	let initialSelectList=[]
 	let queryParams = useQuery() 
-	if(Object.keys(queryParams).length==0){
+	if(queryParams==null){
 		initialSelectList = tag.map(item => item.text);
 	}else{
-		initialSelectList.push(queryParams.tag)
+		initialSelectList.push(queryParams)
 	}
 	const [selectList, setSelectList] = useState(initialSelectList)
 	const [filterItem, setFilterItem] = useState(items);
