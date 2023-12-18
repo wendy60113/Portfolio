@@ -3,7 +3,7 @@ import BlogLayout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { BsCheck } from "react-icons/bs";
-import queryString from "query-string";
+// import queryString from "query-string";
 
 // import BlogListPaginator from '@theme/BlogListPaginator';
 // import BlogPostItems from '@theme/BlogPostItems';
@@ -11,7 +11,8 @@ import queryString from "query-string";
 import styles from './index.module.css'
 
 function useQuery() {
-    const parsed = queryString.parse(location.search);
+	const parsed = ''
+    // const parsed = queryString.parse(location.search);
 	return parsed
 }
 
