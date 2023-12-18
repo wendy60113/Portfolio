@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
+import Link from "@docusaurus/Link";
 
 const IntroData =[
     {
-        id:0,
         Title:'前端程式',
         Content:'使用vue.js和react.js製作互動效果及介面元件，並上傳至npm',
         SvgIcon:(
@@ -15,7 +14,6 @@ const IntroData =[
         )
     },
     {
-        id:1,
         Title:'網頁設計',
         Content:'使用Figma製作網頁設計原型，並使用vue.js、css等前端技術製作成網頁',
         SvgIcon:(
@@ -27,7 +25,6 @@ const IntroData =[
         )
     },
     {
-        id:2,
         Title:'資料庫設計',
         Content:'使用mySQL、node.js和mariaDB進行資料庫設計，並撰寫API應用於網頁中',
         SvgIcon:(
@@ -39,7 +36,6 @@ const IntroData =[
         )
     },
     {
-        id:3,
         Title:'UI/UX設計',
         Content:'使用User Flow、UI Flow、ＷireFrame等設計流程進行網頁流程的規劃',
         SvgIcon:(
@@ -58,7 +54,7 @@ export default function IntroPage() {
   return (
     <section className={styles.container}>
         {IntroData.map((item,idx)=>(
-            <Link to={'/portfolio/blog?tag='+item.id} key={'intro-'+idx} className={styles.col}>
+            <Link to={'/portfolio/blog?tag='+item.Title} key={'intro-'+idx} className={styles.col}>
                 {item.SvgIcon}
                 <br/>
                 <label>{item.Title}</label>
