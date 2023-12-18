@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import Link from "@docusaurus/Link";
+// import Link from "@docusaurus/Link";
 
 const IntroData =[
     {
@@ -54,13 +54,15 @@ export default function IntroPage() {
   return (
     <section className={styles.container}>
         {IntroData.map((item,idx)=>(
-            <Link to={'/blog?tag='+item.Title} key={'intro-'+idx} className={styles.col}>
+            <div className={styles.col} key={'intro-'+idx}>
+            {/* <Link to={'/blog?tag='+item.Title} key={'intro-'+idx} className={styles.col}> */}
                 {item.SvgIcon}
                 <br/>
                 <label>{item.Title}</label>
                 <br/>
                 <span>{item.Content}</span>
-            </Link>
+            {/* </Link> */}
+            </div>
         ))}
     </section>
   )
