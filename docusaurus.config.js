@@ -33,6 +33,7 @@ const config = {
   },
   customFields: {
     blog: require("./config/blog.js"),
+    tag: require("./config/tag.js"),
   },
   presets: [
     [
@@ -49,6 +50,11 @@ const config = {
         blog: {
           showReadingTime: true,
           postsPerPage: 12,
+          blogListComponent: '@theme/BlogListPage',
+          blogPostComponent: '@theme/BlogPostPage',
+          // blogTagsListComponent:'@theme/BlogTagListPage',
+          // blogSidebarTitle: 'All posts',
+          // blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: [require.resolve("./src/css/custom.css")],
