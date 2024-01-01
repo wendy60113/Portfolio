@@ -10,7 +10,7 @@ tool: mySql / nodejs / RESTful API / Html / CSS / Vuejs / Figma
 
 ## 簡介
 
-歡迎來到咖啡廳搜尋網頁，這是一個以 Vue.js 和 Node.js 製作的網頁。此網頁提供使用者可以快速搜尋咖啡廳資訊。透過本網頁可以新增、搜尋咖啡廳資訊，並建立個人帳號來存取個人的「我的最愛」列表。
+這是一個以 Vue.js 和 Node.js 製作的網頁。此網頁提供使用者可以快速搜尋咖啡廳資訊。透過本網頁可以新增、搜尋咖啡廳資訊，並建立個人帳號來存取個人的「我的最愛」列表。
 
 以下為此專案的各項實作說明：
 
@@ -436,18 +436,17 @@ none
 
 ---
 
+本專案採用前後端分離的方式進行
+![process](./process.png)
+
 ### 4.後端撰寫
 
-此專案採前後端分離製作
+mySql+node.js
 
-使用套件：
-
-**（1） express：作為中介層使用**
-
-- 簡化路由處理、直接指定 Router
-- 設定跨域
-
-**（2） body-parser：解析 request body 內容**
+- 使用 RESTful API 設計方法
+- 採用 MVC 架構
+- 使用 Swagger 生成 API 文件
+- 使用 body-parser 解析 request body 內容
 
 ---
 
