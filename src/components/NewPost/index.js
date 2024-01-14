@@ -6,7 +6,7 @@ export default function NewPost() {
   return (
     <>
       <section className={styles.container}>
-        <label className={styles.title}>New Post</label>
+        <label className={styles.title}>\ New Post /</label>
         <section className={styles.flexContainer}>
             <div className={styles.banner}>
                 <Link to="/blog/proj_5">

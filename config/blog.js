@@ -8,7 +8,7 @@ module.exports = [
   },
   {
     slug: "proj_5",
-    title: "咖啡廳搜尋網頁",
+    title: "咖啡地圖",
     test_image: "/portfolio/img/cover/cafelist_01.jpg",
     tags: ["資料庫設計", "前端程式", "UI/UX設計", "網頁設計"],
     url: "/blog/proj_5",

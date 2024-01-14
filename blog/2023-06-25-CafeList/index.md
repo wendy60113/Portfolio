@@ -1,6 +1,6 @@
 ---
 slug: proj_5
-title: 咖啡廳搜尋網頁
+title: 咖啡地圖
 test_image: /portfolio/img/cover/cafelist_01.jpg
 banner_img: /portfolio/img/banner/cafelist_06.jpg
 tags: [資料庫設計, 前端程式, UI/UX設計, 網頁設計]
@@ -430,7 +430,7 @@ none
 
 ### 3.Figma 介面設計
 
-[Prototype](https://www.figma.com/proto/f3UUqy0fe4K9HYat19EWMl/Coffee-Shop-Collection?type=design&node-id=1-2&t=gpzmHeeV3s1FqivL-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)
+[Prototype](https://www.figma.com/proto/f3UUqy0fe4K9HYat19EWMl/Coffee-Shop-Collection?type=design&node-id=101-36&t=AkgEI8XZUd88avwd-0&scaling=scale-down&page-id=0%3A1)
 
 ![figma](./figma.png)
 
@@ -452,7 +452,7 @@ mySql+node.js
 
 ### 5.前端撰寫
 
-**（1）Component 設計**
+<!-- **（1）Component 設計**
 
 <div style={{width:70+'%'}}>
 
@@ -501,6 +501,22 @@ mySql+node.js
 ![component_3](./component_3.png)
 
 </div>
+
+- **列表 Component**
+
+  > | props name | type                     | default | description  |
+  > | ---------- | ------------------------ | ------- | ------------ |
+  > | title      | string                   | -       | 咖啡廳名稱   |
+  > | address    | string                   | -       | 咖啡廳地址   |
+  > | striped    | string(colored or light) | -       | 列表顏色分隔 |
+
+- **列表按鈕 Component**
+
+  > | props name | type   | default | description |
+  > | ---------- | ------ | ------- | ----------- |
+  > | icon       | string | -       | icon 名稱   | -->
+
+![frontend_intro](./frontend_intro_1.jpg)
 
 - **列表 Component**
 

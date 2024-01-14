@@ -9,8 +9,8 @@
   width: 100%;
 }
 .banner img{
-  border-radius: 15px;
-  box-shadow: rgba(84, 83, 81, 0.2) 2px 2px 20px;
+  /* border-radius: 15px; */
+  /* box-shadow: rgba(84, 83, 81, 0.2) 2px 2px 20px; */
   cursor: pointer;
 }
 .banner:hover{
@@ -21,10 +21,10 @@
 }
 .title {
   font-size: 3rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 900;
   color: #333;
-  text-shadow: #dddddd 3px 3px 0px;
+  /* text-shadow: #dddddd 3px 3px 0px; */
   /* animation: color-change 1s infinite alternate;
   animation-timing-function:step-start; */
 }
