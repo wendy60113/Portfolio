@@ -38,15 +38,6 @@
         <category label="網頁設計" term="網頁設計"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[產品形象網站]]></title>
-        <id>https://wendy60113.github.io/portfolio/blog/proj_3</id>
-        <link href="https://wendy60113.github.io/portfolio/blog/proj_3"/>
-        <updated>2022-02-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[網頁切版]]></summary>
-        <category label="網頁設計" term="網頁設計"/>
-        <category label="前端程式" term="前端程式"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[測驗網頁]]></title>
         <id>https://wendy60113.github.io/portfolio/blog/proj_2</id>
         <link href="https://wendy60113.github.io/portfolio/blog/proj_2"/>
@@ -55,13 +46,5 @@
         <category label="前端程式" term="前端程式"/>
         <category label="UI/UX設計" term="UI/UX設計"/>
         <category label="網頁設計" term="網頁設計"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[數位學習APP設計]]></title>
-        <id>https://wendy60113.github.io/portfolio/blog/proj_1</id>
-        <link href="https://wendy60113.github.io/portfolio/blog/proj_1"/>
-        <updated>2022-02-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[UIUX設計、專案時程管理]]></summary>
-        <category label="UI/UX設計" term="UI/UX設計"/>
     </entry>
 </feed>

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8392],{6372:o=>{o.exports=JSON.parse('{"permalink":"/portfolio/blog","page":1,"postsPerPage":12,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
